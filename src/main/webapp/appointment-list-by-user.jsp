@@ -33,7 +33,7 @@
 			type="submit" value="delete" name="doThisToList"> <input
 			type="submit" value="add" name="doThisToList">
 	</form>
-	<a href="addItemsForListServlet">Create a new List</a>
+	<a href="addAppointmentsForListServlet">Create a new List</a>
 	<a href="index.html">Insert a new pet</a>
 </body>
 </html>
