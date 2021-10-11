@@ -21,7 +21,7 @@
 				<tr>
 					<td colspan="3">Visit Date: ${currentlist.visitDate}</td>
 				</tr>
-				<c:forEach var="listVal" items="${currentlist.listOfItems}">
+				<c:forEach var="listVal" items="${currentlist.petsList}">
 					<tr>
 						<td></td>
 						<td colspan="3">${listVal.petName},${listVal.petType}</td>

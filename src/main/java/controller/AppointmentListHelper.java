@@ -28,8 +28,8 @@ public class AppointmentListHelper {
 
 	public List<AppointmentList> getLists(){
 		EntityManager em= emfactory.createEntityManager();
-		List<AppointmentList> allAppointments = em.createQuery("Select d FROM AppointmentList d").getResultList();
-		return allAppointments;
+		List<AppointmentList> allLists = em.createQuery("Select d FROM AppointmentList d").getResultList();
+		return allLists;
 		
 	}
 
