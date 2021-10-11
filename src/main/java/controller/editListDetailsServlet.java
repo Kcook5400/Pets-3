@@ -52,9 +52,9 @@ public class editListDetailsServlet extends HttpServlet {
 		String month = request.getParameter("month");
 		String day = request.getParameter("day");
 		String year = request.getParameter("year");
-		String CustomerName = request.getParameter("CustomerName");
+		String customerName = request.getParameter("customerName");
 		// find our add the new Customer
-		Customer newCustomer = sh.findCustomer(CustomerName);
+		Customer newCustomer = sh.findCustomer(customerName);
 		LocalDate ld;
 		try {
 			ld = LocalDate.of(Integer.parseInt(year), Integer.parseInt(month), Integer.parseInt(day));
