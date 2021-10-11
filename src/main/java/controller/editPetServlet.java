@@ -1,5 +1,6 @@
 package controller;
 
+
 import java.io.IOException;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -7,8 +8,10 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import model.Pet;
+
 /**
- * Servlet implementation class editPetServlet
+ * Servlet implementation class addPetServlet
  */
 @WebServlet("/editPetServlet")
 public class editPetServlet extends HttpServlet {
@@ -23,19 +26,24 @@ public class editPetServlet extends HttpServlet {
     }
 
 	/**
-	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
-	 */
-	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		// TODO Auto-generated method stub
-		response.getWriter().append("Served at: ").append(request.getContextPath());
-	}
-
-	/**
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
-		doGet(request, response);
+       PetHelper dao = new PetHelper();
+		
+		String petName = request.getParameter("petName");
+		String petType = request.getParameter("petType");
+		Integer tempId = Integer.parseInt(request.getParameter("id"));
+				
+		Pet itemToUpdate = dao.searchForPetById(tempId);
+		itemToUpdate.setPetName(petName);
+		itemToUpdate.setPetType(petType);
+				
+		dao.updatePet(itemToUpdate);
+
+		getServletContext().getRequestDispatcher("/viewAllPetsServlet").forward(request, response);
+
 	}
 
 }
