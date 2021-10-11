@@ -18,14 +18,14 @@ import model.Pet;
 /**
  * Servlet implementation class createNewListServlet2
  */
-@WebServlet("/createNewListServlet2")
-public class createNewListServlet2 extends HttpServlet {
+@WebServlet("/createNewListServlet")
+public class createNewListServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
     /**
      * @see HttpServlet#HttpServlet()
      */
-    public createNewListServlet2() {
+    public createNewListServlet() {
         super();
         // TODO Auto-generated constructor stub
     }
