@@ -21,8 +21,9 @@ public class AppointmentList {
 	@GeneratedValue
 	private int id;
 	private String appointmentName;
-	private Customer customer;
 	@ManyToOne(cascade=CascadeType.PERSIST)
+	private Customer customer;
+
 	private LocalDate visitDate;
 	@OneToMany(cascade=CascadeType.MERGE, fetch=FetchType.EAGER)
 	private List<Pet> petsList;
