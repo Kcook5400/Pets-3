@@ -16,7 +16,7 @@ import model.Customer;
  */
 public class CustomerHelper {
 	
-	static EntityManagerFactory emfactory = Persistence.createEntityManagerFactory("ShoppingList");
+	static EntityManagerFactory emfactory = Persistence.createEntityManagerFactory("Pets-3");
 	
 	public void insertCustomer(Customer customer) {
 		EntityManager em= emfactory.createEntityManager();
@@ -38,7 +38,7 @@ public class CustomerHelper {
 
 		EntityManager em = emfactory.createEntityManager();
 		em.getTransaction().begin();
-		TypedQuery<Customer> typedQuery = em.createQuery("select cus from customer cus where customer.customerName = :selectedName",Customer.class);
+		TypedQuery<Customer> typedQuery = em.createQuery("select c from Customer c where c.customerName = :selectedName",Customer.class);
 		typedQuery.setParameter("selectedName", customerName);
 		typedQuery.setMaxResults(1);
 		Customer foundCustomer;
