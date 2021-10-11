@@ -16,7 +16,7 @@
 					<td><h2>${currentlist.appointmentName}</h2></td>
 				</tr>
 				<tr>
-					<td colspan="3">Customer: ${currentlist.customer}</td>
+					<td colspan="3">Customer: ${currentlist.customer.customerName}</td>
 				</tr>
 				<tr>
 					<td colspan="3">Visit Date: ${currentlist.visitDate}</td>
