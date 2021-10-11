@@ -12,7 +12,7 @@
 		<table>
 			<c:forEach items="${requestScope.allItems}" var="currentitem">
 				<tr>
-					<td><input type="radio" name="id" value="${currentitem.id}"></td>
+				    <td><input type="radio" name="id" value="${currentitem.id}"></td>
 					<td>${currentitem.petName}</td>
 					<td>${currentitem.petType}</td>
 				</tr>
