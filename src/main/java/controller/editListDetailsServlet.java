@@ -16,9 +16,9 @@ import model.Customer;
 import model.Pet;
 
 /**
- * Servlet implementation class editAppointmentListServlet
+ * Servlet implementation class editDetailsListServlet
  */
-@WebServlet("/editAppointmentListServlet")
+@WebServlet("/editListDetailsServlet")
 public class editListDetailsServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
@@ -48,7 +48,7 @@ public class editListDetailsServlet extends HttpServlet {
 		CustomerHelper sh = new CustomerHelper();
 		Integer tempId = Integer.parseInt(request.getParameter("id"));
 		AppointmentList listToUpdate = dao.searchForListDetailsById(tempId);
-		String newListName = request.getParameter("listName");
+		String newappointmentName = request.getParameter("appointmentName");
 		String month = request.getParameter("month");
 		String day = request.getParameter("day");
 		String year = request.getParameter("year");
@@ -76,7 +76,7 @@ public class editListDetailsServlet extends HttpServlet {
 			List<Pet> selectedItemsInList = new ArrayList<Pet>();
 			listToUpdate.setPetsList(selectedItemsInList);
 		}
-		listToUpdate.setAppointmentName(newListName);
+		listToUpdate.setAppointmentName(newappointmentName);
 		listToUpdate.setVisitDate(ld);
 		listToUpdate.setCustomer(newCustomer);
 		dao.updateList(listToUpdate);

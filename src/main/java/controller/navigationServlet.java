@@ -40,7 +40,7 @@ public class navigationServlet extends HttpServlet {
 		PetHelper dao = new PetHelper();
 		String act = request.getParameter("doThisToItem");
 		
-		String path = "/viewAllItemsServlet";
+		String path = "/viewAllPetsServlet";
 		
 		if(act.equals("delete")) {
 			try {

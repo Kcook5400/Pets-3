@@ -21,7 +21,7 @@
 				<tr>
 					<td colspan="3">Visit Date: ${currentlist.visitDate}</td>
 				</tr>
-				<c:forEach var="listVal" items="${currentlist.listOfItems}">
+				<c:forEach var="listVal" items="${currentlist.petsList}">
 					<tr>
 						<td></td>
 						<td colspan="3">${listVal.petName},${listVal.petType}</td>
@@ -33,7 +33,7 @@
 			type="submit" value="delete" name="doThisToList"> <input
 			type="submit" value="add" name="doThisToList">
 	</form>
-	<a href="addItemsForListServlet">Create a new List</a>
+	<a href="addAppointmentsForListServlet">Create a new List</a>
 	<a href="index.html">Insert a new pet</a>
 </body>
 </html>

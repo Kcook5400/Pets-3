@@ -9,11 +9,11 @@
 </head>
 <body>
 <form action = "createNewListServlet" method = "post">
-List Name: <input type = "text" name = "listName"> <br>
-Trip date: <input type = "text" name = "month" placeholder = "mm" size = "4">
+Appointment Name: <input type = "text" name = "listName"> <br>
+Customer Name: <input type = "text" name = "CustomerName"><br>
+Visit date: <input type = "text" name = "month" placeholder = "mm" size = "4">
 <input type="text" name = "day" placeholder = "dd" size = "4">
 <input type = "text" name = "year" placeholder = "yyyy" size = "4">
-Customer Name: <input type = "text" name = "CustomerName"><br>
 Pets: <br>
 <select name="allPetsToAdd" multiple size ="6">
 <c:forEach items="${requestScope.allItems}" var = "currentPet">
