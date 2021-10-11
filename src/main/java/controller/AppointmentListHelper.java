@@ -15,7 +15,7 @@ import model.AppointmentList;
  */
 public class AppointmentListHelper {
 
-	static EntityManagerFactory emfactory = Persistence.createEntityManagerFactory("pets");
+	static EntityManagerFactory emfactory = Persistence.createEntityManagerFactory("Pets-3");
 
 	public void insertNewListDetails(AppointmentList app) {
 		EntityManager em = emfactory.createEntityManager();
@@ -28,7 +28,7 @@ public class AppointmentListHelper {
 
 	public List<AppointmentList> getLists(){
 		EntityManager em= emfactory.createEntityManager();
-		List<AppointmentList> allAppointments = em.createQuery("Select a FROM Appointments d").getResultList();
+		List<AppointmentList> allAppointments = em.createQuery("Select d FROM AppointmentList d").getResultList();
 		return allAppointments;
 		
 	}

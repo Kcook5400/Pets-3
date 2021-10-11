@@ -16,7 +16,7 @@ import model.Pet;
 public class PetHelper {
 	static
 	EntityManagerFactory emfactory =
-	Persistence.createEntityManagerFactory("PetList");
+	Persistence.createEntityManagerFactory("Pets-3");
 
 	public void insertPet(Pet pet) {
 		EntityManager em = emfactory.createEntityManager();
