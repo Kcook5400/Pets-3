@@ -19,13 +19,13 @@ import model.Pet;
  * Servlet implementation class createNewListServlet2
  */
 @WebServlet("/createNewListServlet2")
-public class createNewListServlet extends HttpServlet {
+public class createNewListServlet2 extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
     /**
      * @see HttpServlet#HttpServlet()
      */
-    public createNewListServlet() {
+    public createNewListServlet2() {
         super();
         // TODO Auto-generated constructor stub
     }
