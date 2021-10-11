@@ -1,5 +1,6 @@
 package model;
 
+import java.time.LocalDate;
 import java.util.List;
 import javax.persistence.CascadeType;
 import javax.persistence.Entity;
@@ -8,7 +9,6 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.ManyToOne;
 import javax.persistence.OneToMany;
-import java.time.LocalDate;
 
 @Entity
 /**
@@ -107,13 +107,23 @@ public class AppointmentList {
 		this.visitDate = visitDate;
 	}
 
+
+	/**
+	 * @return the petsList
+	 */
 	public List<Pet> getPetsList() {
 		return petsList;
 	}
 
+
+	/**
+	 * @param petsList the petsList to set
+	 */
 	public void setPetsList(List<Pet> petsList) {
 		this.petsList = petsList;
 	}
+
+
 	@Override
 	public String toString() {
 		return "AppointmentList [id=" + id + ", customer=" + customer + ", visitDate=" + visitDate + ", petsList="

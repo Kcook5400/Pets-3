@@ -12,8 +12,9 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import model.Pet;
-import model.Customer;
 import model.AppointmentList;
+import model.Customer;
+
 
 /**
  * Servlet implementation class CreateNewListServlet
