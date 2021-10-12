@@ -8,9 +8,9 @@
 		<class>controller.LocalDateAttributeConverter</class>
 				<properties>
 			<property name="javax.persistence.jdbc.driver" value="com.mysql.cj.jdbc.Driver"/>
-			<property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost/pets"/>
-			<property name="javax.persistence.jdbc.user" value="root"/>
-			<property name="javax.persistence.jdbc.password" value="Cmb1221@"/>
+			<property name="javax.persistence.jdbc.url" value="jdbc:mysql://cis175partnerproject.cbcyamc80yze.us-east-1.rds.amazonaws.com/pets"/>
+			<property name="javax.persistence.jdbc.user" value="admin"/>
+			<property name="javax.persistence.jdbc.password" value="Partner1"/>
 		</properties>
 	</persistence-unit>
 </persistence>
