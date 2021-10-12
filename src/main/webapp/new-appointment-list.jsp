@@ -24,6 +24,6 @@ Pets: <br>
 <br>
 <input type = "submit" value = "Create list and Add Items">
 </form>
-<a href = "index.html"> Go add new items instead.</a>
+<a href = "index.html"> Go add new pets instead.</a>
 </body>
 </html>
