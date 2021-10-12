@@ -10,7 +10,7 @@
 <body>
 <form action = "createNewListServlet" method = "post">
 Appointment Name: <input type = "text" name = "appointmentName"> <br>
-Customer Name: <input type = "text" name = "CustomerName"><br>
+Customer Name: <input type = "text" name = "customerName"><br>
 Visit date: <input type = "text" name = "month" placeholder = "mm" size = "4">
 <input type="text" name = "day" placeholder = "dd" size = "4">
 <input type = "text" name = "year" placeholder = "yyyy" size = "4">
