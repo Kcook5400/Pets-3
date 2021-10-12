@@ -25,10 +25,10 @@ public class AddAppointmentsForListServlet extends HttpServlet {
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-	AppointmentListHelper alh = new AppointmentListHelper();
-	request.setAttribute("allAppointments", alh.getLists());
-	if(alh.getLists().isEmpty()) {
-		request.setAttribute("allAppointments",  " ");
+	PetHelper alh = new PetHelper();
+	request.setAttribute("allItems", alh.showAllPets());
+	if(alh.showAllPets().isEmpty()) {
+		request.setAttribute("allItems",  " ");
 		
 	}
 	getServletContext().getRequestDispatcher("/new-appointment-list.jsp").forward(request, response);

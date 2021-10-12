@@ -14,7 +14,7 @@
 		Pets coming to the vet:<br />
 <select name = "allItemsToAdd" multiple size = "6">
 <c:forEach items = "${requestScope.allItems}" var="currentitem">
-<option value = "${currentitem.id}"> ${currentitem.petName} | ${currentitem.petType}</option>
+<option value = "${currentitem.id}"> | ${currentitem.petName} | ${currentitem.petType}</option>
 </c:forEach>
 </select><br/>
 	 <input type="submit" value="Create List and Add Pets">

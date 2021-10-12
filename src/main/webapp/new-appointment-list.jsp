@@ -15,7 +15,7 @@ Visit date: <input type = "text" name = "month" placeholder = "mm" size = "4">
 <input type="text" name = "day" placeholder = "dd" size = "4">
 <input type = "text" name = "year" placeholder = "yyyy" size = "4">
 Pets: <br>
-<select name="allPetsToAdd" multiple size ="6">
+<select name="allItemsToAdd" multiple size ="6">
 <c:forEach items="${requestScope.allItems}" var = "currentitem">
 <option value = "${currentitem.id}"> ${currentitem.petName} | ${currentitem.petType}</option>
 </c:forEach>
